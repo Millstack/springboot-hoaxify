@@ -1,0 +1,14 @@
+spring:
+  
+  # H2 database configuration
+  
+  # false: to get the static mem - meomory same everytime eg: jdbc:h2:mem:testdb
+  # true: to get dynamic H2 database from the console when springboot app satrted, eg: jdbc:h2:mem:2fe33357-0f32-4d69-9549-895b939d9a50
+  datasource:
+    generate-unique-name: false 
+    
+  # localhost:8080/h2-console  
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
